@@ -44,8 +44,9 @@ A continuación, se detallan las opciones disponibles junto con el puntaje asign
 |----------------|--------------|-------------|
 | Aceptar archivos y ejecutar el contenido    | 	Diego Corrales  |  15  |
 | Implementar flujos de funciones (->) que solo reciban la imagen como parámetro (como show_images)   | Equipo  |  15  |
-| Exportación del árbol de sintaxis abstracto como texto incluyendo las matrices generadas     |  Ari  Alvarez |  15  |
+| Aceptar None como valor de la gramática para inicialización de variables   |  Ari  Alvarez |  5  |
 | Implementación de visualización de histogramas con opencv   | Ari  Alvarez |  10  |
+| Implementación de un algoritmo complejo como herramienta en el lenguaje: WaterShed,  | Ari  Alvarez |  25 |
 | Aceptar el manejo de listas: A[10]=12, A[0:12] = 20, A[3][4] = 4 (No es necesario mostrar el manejo de listas y/o numpy arrays bidimensionales)   | Diego Corrales    |  25   |
 | Implementación de flujos que sean agregaciones: b = img -> blur(12) -> mean() como último paso. Estas funciones son parte de numpy    | Salvador Salgado  |  25         |
 |     |    |  105        |
