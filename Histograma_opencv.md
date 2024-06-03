@@ -96,7 +96,7 @@ def show_histograma(image):
   
 ### Ejemplo de Uso
 ```python
-img = load_image('home.jpg')
+img = load_image('foquita.jpg')
 show_histograma(img)
 ```
 ### Demostración/Resultado
