@@ -34,11 +34,6 @@ Partiendo del código base proporcionado en clase, se desarrollará una herramie
 
 A continuación, se detallan las opciones disponibles junto con el puntaje asignado a cada una. Para considerar el código como completo (100), se deberá seleccionar una combinación de opciones que sume 100 y demostrar su correcta implementación:
 
-<br> Funcionalidad A: Puntaje 30
-<br> Funcionalidad B: Puntaje 20
-<br> Funcionalidad C: Puntaje 25
-<br> Funcionalidad D: Puntaje 15
-<br> Funcionalidad E: Puntaje 10
 
 | Características | Encargado    | Puntaje     |
 |----------------|--------------|-------------|
@@ -53,6 +48,6 @@ A continuación, se detallan las opciones disponibles junto con el puntaje asign
 
 
 ## Referencias
-OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
-OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
+<br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
+<br> OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
 
