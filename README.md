@@ -42,33 +42,17 @@ A continuación, se detallan las opciones disponibles junto con el puntaje asign
 
 | Características | Encargado    | Puntaje     |
 |----------------|--------------|-------------|
+| Aceptar None como valor de la gramática para inicialización de variables | Ari Alvarez | 5 |
+| Implementación de visualización de histogramas con opencv   | Ari  Alvarez |  10  |
+| Aceptar cualquier función de numpy para manejo de matrices como np.where, np.mean, np.std. Al menos 9 de ellas | Diego Corrales    |  10 |
 | Aceptar archivos y ejecutar el contenido    | 	Diego Corrales  |  15  |
 | Implementar flujos de funciones (->) que solo reciban la imagen como parámetro (como show_images)   | Equipo  |  15  |
-| Aceptar None como valor de la gramática para inicialización de variables   |  Ari  Alvarez |  5  |
-| Implementación de visualización de histogramas con opencv   | Ari  Alvarez |  10  |
 | Implementación de un algoritmo complejo como herramienta en el lenguaje: WaterShed,  | Ari  Alvarez |  25 |
-| Aceptar el manejo de listas: A[10]=12, A[0:12] = 20, A[3][4] = 4 (No es necesario mostrar el manejo de listas y/o numpy arrays bidimensionales)   | Diego Corrales    |  25   |
-| Implementación de flujos que sean agregaciones: b = img -> blur(12) -> mean() como último paso. Estas funciones son parte de numpy    | Salvador Salgado  |  25         |
+| Implementación de flujos que sean agregaciones: b = img -> blur(12) -> mean() como último paso. Estas funciones son parte de numpy    | Salvador Salgado  |  25  |
 |     |    |  105        |
 
-## Reglas de la gramática implementada
-
-## Descripción de las funciones implementadas como herramientas y accesorios a la gramática
-
-## Demostración de una o varias expresiones y el árbol de sintaxis abstracto demostrando
-
-## Precedencia de operadores
-
-## Llamadas a funciones
-
-## Asignación de variables
-
-## Implementación de flujos de imágenes
-
-## Aplicación de filtros de Open CV
-
-## Características implementadas
 
 ## Referencias
- 
+OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
+OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
 
