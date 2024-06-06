@@ -1,15 +1,13 @@
-# Aceptar Archivos y ejecutar el contenido
-
 # Aceptar archivos y ejecutar el contenido
 
-# Descripción de las Funciones Implementadas como Herramientas y Accesorios a la Gramática
+## Descripción de las Funciones Implementadas como Herramientas y Accesorios a la Gramática
 
 No se implementó ninguna función como accesorio a la gramática para esta nueva característica. Se usaron las siguientes funciones nativas de Python que no se habían utilizado en otras partes del código:
 
 - `open()`: Abre el archivo.
 - `<string>.strip()`: Elimina espacios y caracteres de nueva línea del principio y el final de un string.
 
-# Uso
+## Uso
 
 Carga el archivo pasado como argumento de ejecución en modo de lectura.
 
@@ -19,7 +17,7 @@ Se eliminan los espacios y caracteres de nueva línea por cada línea del archiv
 
 - `line = line.strip()`
 
-# Implementación
+## Implementación
 
 ### translator.py
 
@@ -49,7 +47,7 @@ if len(sys.argv) > 1:
                 print("Result", result)
 ```
 
-# Llamadas a Funciones
+## Llamadas a Funciones
 
 El módulo en sí se llamó con el archivo “test.txt” con el siguiente contenido:
 
@@ -97,7 +95,7 @@ Graph with 5 nodes and 2 edges
 Result 28
 ```
 
-# Asignación de Variables
+## Asignación de Variables
 
 El módulo en sí se llamó con el archivo “test.txt” con el siguiente contenido:
 
@@ -145,7 +143,7 @@ Graph with 5 nodes and 2 edges
 Result 28
 ```
 
-# Ejemplo de Uso
+## Ejemplo de Uso
 
 El módulo en sí se llama desde la línea de comandos al momento de ejecutar el translator.py como un parámetro adicional. Simplemente se agrega la ruta al archivo:
 
