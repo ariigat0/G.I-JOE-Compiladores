@@ -45,6 +45,12 @@ symbol_table["sumAB"] = sumAB
 symbol_table["load"] = load_image
 symbol_table["show"] = show_image
 symbol_table["tuple"] = gen_vector
+symbol_table["mean"] = get_mean
+symbol_table["average"] = get_average
+symbol_table["median"] = get_median
+symbol_table["std"] = get_std
+symbol_table["histogram"] = get_histogram
+symbol_table["put"] = put_at
 
 # These will be our terminal characters
 tokens = (
@@ -60,7 +66,10 @@ tokens = (
     'RPAREN',
     'COMMA',
     'CONNECT',
-    'STRING'
+    'STRING',
+    'LBRACKET',
+    'RBRACKET',
+    'COLON'
     )
 
 t_PLUS = r'\+'
@@ -73,6 +82,9 @@ t_LPAREN = r'\('
 t_RPAREN = r'\)'
 t_COMMA = r','
 t_CONNECT = r'->'
+t_LBRACKET = r'\]'
+t_RBRACKET = r'\['
+t_COLON = r':'
 
 def t_STRING(t):
     r'\"(.)*\"'
@@ -87,15 +99,6 @@ def t_NUMBER(t):
     else:
         t.value = int(t.value)
     return t
-
-'''
-def t_FUNCTION(t):
-    r'[a-zA-Z_][a-zA-Z0-9_]*\(   (\d+\.?\d*  |    [a-zA-Z_][a-zA-Z0-9_]*   )     \)'
-    print("****" , t.value)
-    s = t.value[0:-1].split("(")
-    t.value = s
-    return t
-'''
 
 def t_VARIABLE(t):
     r'[a-zA-Z_][a-zA-Z0-9_]*'
@@ -329,17 +332,6 @@ def p_params(p):
     else:
         p[0] = [p[1]]
 
-'''
-def p_exponent_expr(p):
-    ''
-    exponent : LPAREN expression RPAREN
-    ''
-    node = add_node({'type':'GROUP', 'label':f'( )', 'value':''})
-    parseGraph.add_edge(node["counter"], p[2]["counter"])
-
-    p[0] = node
-'''
-
 def p_error(p):
     print("Syntax error in input: ", p)
 
@@ -418,7 +410,7 @@ def visit_node(tree, node_id, from_id):
 
 parser = yacc.yacc()
 
-if len(sys.argv):
+if len(sys.argv) > 1:
     with open(sys.argv[1], 'r') as file:
         for line in file:
             line = line.strip()
@@ -436,8 +428,8 @@ if len(sys.argv):
                 labels = nx.get_node_attributes(parseGraph, "label")
                 
                 # Visualizacion del arbol de ejecucion
-                #nx.draw(parseGraph, labels=labels, with_labels=True)
-                #plt.show()
+                nx.draw(parseGraph, labels=labels, with_labels=True)
+                plt.show()
 
                 result = execute_parse_tree(parseGraph)
                 print("Result", result)
@@ -470,12 +462,6 @@ while True:
 
     result = execute_parse_tree(parseGraph)
     print("Result", result)
-    
-    '''
-    La ventaja de hacerlo como un grafo es que el codigo como grafo
-    representa la ejecucion, efectivamente ya compilado. Entonces es 
-    transferible a cualquier computadora.
-    '''
 
 print("\nended")
 
