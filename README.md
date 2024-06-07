@@ -235,6 +235,10 @@ Result None
 
 > **_NOTA:_**  Para ver ejemplos específicos a las características implementadas, favor de ver su documentación. Esta se puede encontrar en las ligas arriba.
 
+## Videos Individuales
+Favor de visitar el siguiente documento para ver las ligas a los videos de reflexión individuales: <br>
+[Videos de Reflexión Individuales](Videos_individuales.md)
+
 ## Referencias
 <br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
 <br> OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
