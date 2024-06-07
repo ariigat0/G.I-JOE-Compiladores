@@ -19,23 +19,12 @@ def search_cv2(function_name):
         pass
     return None
 
-def get_mean(arr):
-    return np.mean(arr)
-
-def get_average(arr):
-    return np.average(arr)
-
-def get_median(arr):
-    return np.median(arr)
-
-def get_std(arr):
-    return np.std(arr)
-
-def get_histogram(arr):
-    return np.histogram(arr)
-
-def put_at(arr, idx, val):
-    return np.histogram(arr, idx, val)
+def search_np(function_name):
+    try:
+        return getattr(np, function_name)
+    except:
+        pass
+    return None
 
 def gen_vector(*args):
     return np.array(args)

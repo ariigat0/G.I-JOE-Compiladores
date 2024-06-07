@@ -29,6 +29,7 @@ symbol_table = dict()
 
 symbol_table["PI"] = pi
 symbol_table["E"] = 2.718281828459045
+symbol_table["None"] = None
 
 def myPrint(v1,v2,v3,v4):
     print("Printing: ", v1,v2,v3,v4)
@@ -45,12 +46,6 @@ symbol_table["sumAB"] = sumAB
 symbol_table["load"] = load_image
 symbol_table["show"] = show_image
 symbol_table["tuple"] = gen_vector
-symbol_table["mean"] = get_mean
-symbol_table["average"] = get_average
-symbol_table["median"] = get_median
-symbol_table["std"] = get_std
-symbol_table["histogram"] = get_histogram
-symbol_table["put"] = put_at
 
 # These will be our terminal characters
 tokens = (
@@ -387,6 +382,10 @@ def visit_node(tree, node_id, from_id):
             fn = search_cv2(current_node["value"])
             if fn is not None:
                 return fn(*res)
+            else:
+                fn = search_np(current_node["value"])
+                if fn is not None:
+                    return fn(*res)
         print("ERROR! Function not found, returning 0")
         return 0
     
@@ -457,8 +456,8 @@ while True:
     labels = nx.get_node_attributes(parseGraph, "label")
     
     # Visualizacion del arbol de ejecucion
-    #nx.draw(parseGraph, labels=labels, with_labels=True)
-    #plt.show()
+    nx.draw(parseGraph, labels=labels, with_labels=True)
+    plt.show()
 
     result = execute_parse_tree(parseGraph)
     print("Result", result)
