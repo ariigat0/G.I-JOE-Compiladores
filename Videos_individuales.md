@@ -7,5 +7,5 @@ VIDEOS INDIVIDUALES
 3. Los videos deberán ser breves, 1:30 a 3:00 por cada participante. Es muy importante justificar los puntos de vista con argumentos lógicos Y/O artículos de investigación Y/O pruebas empíricas o documentales. Solo es necesario mencionar donde está la referencia. 
 
 <br> Ariadne Alvarez  | A01652080: https://drive.google.com/file/d/15xRHGtcS7Jgk_jgFp3Se0ysE9shpjX9u/view?usp=sharing
-<br>  Diego Corrales   | A01781631:
-<br>  Salvador Salgado | A01422874:
+<br> Diego Corrales   | A01781631: https://drive.google.com/drive/folders/1LI9wFIe7qdcXCvQ8euLt_QLHVQ0eMTLp?usp=sharing
+<br> Salvador Salgado | A01422874:
