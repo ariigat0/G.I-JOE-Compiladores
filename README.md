@@ -94,6 +94,141 @@ params              -> params COMMA expression
                      | expression
 ```
 
+## Ejecución y ejemplos
+
+### Instalación
+
+Se puede instalar el programa haciendo una copia local del presente repositorio:
+`git clone https://github.com/ariigat0/G.I-JOE-Compiladores.git`
+
+### Ejecución
+
+En una línea de comando, posicionarse en la carpeta base del repositorio y correr:
+`python translator.py`
+
+Se ejecutará el translator y mostrará:
+```markdown
+Translator v1.0
+>
+```
+
+Ahora se pueden escribir instrucciones para ser ejecutadas por el translator.
+
+> **_NOTA:_**  Se requiere de Python para correr `translator.py`.
+> **_NOTA:_**  No se pueden escribir espacios en la entrada del translator.
+
+### Ejemplos
+
+Estos ejemplos cubren todas las reglas definidas en la gramática:
+
+#### Ejemplo 1
+Comando:
+```markdown
+a=average(tuple(2,3,4))+33^54-87*2+4/23
+```
+Grafo resultante:
+![image](ImagenesReadme/Full1.png)
+
+Resultado:
+```markdown
+Graph with 0 nodes and 0 edges
+Graph with 1 nodes and 0 edges
+Graph with 2 nodes and 0 edges
+Graph with 3 nodes and 0 edges
+Graph with 4 nodes and 0 edges
+Graph with 5 nodes and 3 edges
+Graph with 6 nodes and 4 edges
+Graph with 7 nodes and 4 edges
+Graph with 8 nodes and 4 edges
+Graph with 9 nodes and 6 edges
+Graph with 10 nodes and 8 edges
+Graph with 11 nodes and 8 edges
+Graph with 12 nodes and 8 edges
+Graph with 13 nodes and 10 edges
+Graph with 14 nodes and 12 edges
+Graph with 15 nodes and 12 edges
+Graph with 16 nodes and 12 edges
+Graph with 17 nodes and 14 edges
+Graph with 18 nodes and 16 edges
+Graph with 19 nodes and 16 edges
+Result 9.994308557022821e+81
+```
+
+#### Ejemplo 2
+Comandos:
+```markdown
+a=3
+b=a->sumAB(3)->sumAB(3)->sumAB(3)
+```
+Grafos resultantes:
+![image](ImagenesReadme/Full2.1.png)
+![image](ImagenesReadme/Full2.2.png)
+
+Resultado:
+```markdown
+>a=3
+Graph with 0 nodes and 0 edges
+Graph with 1 nodes and 0 edges
+Graph with 2 nodes and 0 edges
+Graph with 3 nodes and 0 edges
+Result 3
+>b=a->sumAB(3)->sumAB(3)->sumAB(3)
+Graph with 0 nodes and 0 edges
+Graph with 1 nodes and 0 edges
+Graph with 2 nodes and 0 edges
+Graph with 3 nodes and 0 edges
+Graph with 4 nodes and 2 edges
+Graph with 5 nodes and 2 edges
+Graph with 6 nodes and 2 edges
+Graph with 7 nodes and 4 edges
+Graph with 8 nodes and 4 edges
+Graph with 9 nodes and 4 edges
+Graph with 10 nodes and 8 edges
+Graph with 11 nodes and 8 edges
+Result 12
+```
+
+#### Ejemplo 3
+Comandos:
+```markdown
+a=23^3-2+45-90/2
+myPrint(None,a,2,3)
+```
+Grafos resultantes:
+![image](ImagenesReadme/Full3.1.png)
+![image](ImagenesReadme/Full3.2.png)
+
+Resultado:
+```markdown
+>a=23^3-2+45-90/2 
+Graph with 0 nodes and 0 edges
+Graph with 1 nodes and 0 edges
+Graph with 2 nodes and 0 edges
+Graph with 3 nodes and 0 edges
+Graph with 4 nodes and 2 edges
+Graph with 5 nodes and 2 edges
+Graph with 6 nodes and 4 edges
+Graph with 7 nodes and 4 edges
+Graph with 8 nodes and 6 edges
+Graph with 9 nodes and 6 edges
+Graph with 10 nodes and 6 edges
+Graph with 11 nodes and 8 edges
+Graph with 12 nodes and 10 edges
+Graph with 13 nodes and 10 edges
+Result 12165.0
+>myPrint(None,a,2,3)
+Graph with 0 nodes and 0 edges
+Graph with 1 nodes and 0 edges
+Graph with 2 nodes and 0 edges
+Graph with 3 nodes and 0 edges
+Graph with 4 nodes and 0 edges
+Graph with 5 nodes and 0 edges
+Printing:  None 12165.0 2 3
+Result None
+```
+
+> **_NOTA:_**  Para ver ejemplos específicos a las características implementadas, favor de ver su documentación. Esta se puede encontrar en las ligas arriba.
+
 ## Referencias
 <br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
 <br> OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
