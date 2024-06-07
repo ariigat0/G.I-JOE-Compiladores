@@ -208,9 +208,23 @@ def p_flow_function_call(p):
     p[0] = node
 
 
+def p_assignment_aggregation(p):
+    '''
+    assignment : VARIABLE EQUAL aggregation
+    '''
+    node = add_node({'type': 'ASSIGN', 'label': f'=', 'value': ''})
+    node_var = add_node(
+        {'type': 'VARIABLE_ASSIGN', 'label': f'VAR_{p[1]}', 'value': p[1]})
+
+    parseGraph.add_edge(node["counter"], node_var["counter"])
+    parseGraph.add_edge(node["counter"], p[3]["counter"])
+
+    p[0] = node
+
+
 def p_aggregation(p):
     '''
-    flow : NUMBER CONNECT aggregation_functions
+    aggregation : NUMBER CONNECT aggregation_functions
     '''
     connections = parseGraph.neighbors(p[3][0]["counter"])
 
