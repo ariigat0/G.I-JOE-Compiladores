@@ -67,49 +67,49 @@ A continuación se listan las reglas de la gramática implementada en `translato
 
 ```markdown
 assignment -> VARIABLE EQUAL expression
-| VARIABLE EQUAL flow
-| expression
+            | VARIABLE EQUAL flow
+            | expression
 
 flow -> VARIABLE CONNECT flow_functions
 
 flow_functions -> flow_function_call CONNECT flow_functions
-| flow_function_call
+                | flow_function_call
 
 flow_function_call -> VARIABLE LPAREN params RPAREN
 
-assignment_aggregation : VARIABLE EQUAL aggregation
+assignment_aggregation -> VARIABLE EQUAL aggregation
 
 aggregation -> NUMBER CONNECT aggregation_functions
 
 aggregation_fucntions -> aggregation_function_call CONNECT aggregation_functions
-|aggregation_function_call
+                        |aggregation_function_call
 
 aggregation_call -> NUMBER LPAREN params RPAREN
 
 expression -> term
-| string_def
-| expression PLUS term
-| expression MINUS term
+            | string_def
+            | expression PLUS term
+            | expression MINUS term
 
 string_def -> STRING
 
 term -> exponent
-| term TIMES exponent
-| term DIV exponent
+      | term TIMES exponent
+      | term DIV exponent
 
 exponent -> factor
-| factor EXP factor
+          | factor EXP factor
 
 factor -> NUMBER
-| VARIABLE
-| LPAREN expression RPAREN
-| function_call
+        | VARIABLE
+        | LPAREN expression RPAREN
+        | function_call
 
 function_call -> VARIABLE LPAREN RPAREN
-| VARIABLE LPAREN params RPAREN
+               | VARIABLE LPAREN params RPAREN
 
 params -> params COMMA expression
-| expression
+        | expression
 ```
 
 ## Ejecución y ejemplos
@@ -134,7 +134,8 @@ Translator v1.0
 
 Ahora se pueden escribir instrucciones para ser ejecutadas por el translator.
 
-> **_NOTA:_** Se requiere de Python para correr `translator.py`. <br> > **_NOTA:_** No se pueden escribir espacios en la entrada del translator.
+> **_NOTA:_** Se requiere de Python para correr `translator.py`. <br>
+> **_NOTA:_** No se pueden escribir espacios en la entrada del translator.
 
 ### Ejemplos
 
@@ -261,7 +262,7 @@ Resultado:
 > Result None
 ```
 
-#### Ejemplo 3
+#### Ejemplo 4
 
 Comandos:
 
@@ -298,6 +299,7 @@ Resultado:
 > Graph with 3 nodes and 1 edges
 > Graph with 4 nodes and 1 edges
 > Result 113.89563093256133
+```
 
 > **_NOTA:_** Para ver ejemplos específicos a las características implementadas, favor de ver su documentación. Esta se puede encontrar en las ligas arriba.
 
