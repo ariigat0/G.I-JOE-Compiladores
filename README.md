@@ -310,4 +310,5 @@ Favor de visitar el siguiente documento para ver las ligas a los videos de refle
 
 <br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
 <br> OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
+<br> Numpy.Mean — NumPy V1.26 Manual. (s. f.). https://numpy.org/doc/stable/reference/generated/numpy.mean.html
 ```
