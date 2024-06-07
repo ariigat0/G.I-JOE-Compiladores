@@ -34,20 +34,64 @@ Partiendo del código base proporcionado en clase, se desarrollará una herramie
 
 A continuación, se detallan las opciones disponibles junto con el puntaje asignado a cada una. Para considerar el código como completo (100), se deberá seleccionar una combinación de opciones que sume 100 y demostrar su correcta implementación:
 
-
 | Características | Encargado    | Puntaje     |
 |----------------|--------------|-------------|
-| Aceptar None como valor de la gramática para inicialización de variables | Diego Corrales| 5 |
+| Aceptar None como valor de la gramática para inicialización de variables | Diego Corrales | 5 |
 | Implementación de visualización de histogramas con opencv   | Ari  Alvarez |  10  |
 | Aceptar cualquier función de numpy para manejo de matrices como np.where, np.mean, np.std. Al menos 9 de ellas | Diego Corrales    |  10 |
 | Aceptar archivos y ejecutar el contenido    | 	Diego Corrales  |  15  |
 | Implementar flujos de funciones (->) que solo reciban la imagen como parámetro (como show_images)   | Equipo  |  15  |
 | Implementación de un algoritmo complejo como herramienta en el lenguaje: WaterShed,  | Ari  Alvarez |  25 |
 | Implementación de flujos que sean agregaciones: b = img -> blur(12) -> mean() como último paso. Estas funciones son parte de numpy    | Salvador Salgado  |  25  |
-|     |    |  105        |
+| **Total**    |    |  **105**        |
 
+Para ver la documentación de las características implementadas, visitar los siguientes documentos:
+[Aceptar None para Inicialización de Variables]()
+[Visualización de Histogramas con OpenCV](Histograma_opencv.md)
+[Aceptar Funciones de Numpy](AceptarNumpy.md)
+[Aceptar Archivos y Ejecutar el Contenido](AceptarArchivos.md)
+[Implementar Flujos de Funciones]()
+[Implementación de un Algoritmo Complejo: WaterShed](Algoritmo_WaterShed.md)
+[Implementación de Flujos que sean Agregaciones]()
+
+## Reglas de la Gramática Implementada
+A continuación se listan las reglas de la gramática implementada en `translator.py`:
+assignment          -> VARIABLE EQUAL expression
+                     | VARIABLE EQUAL flow
+                     | expression
+                     
+flow                -> VARIABLE CONNECT flow_functions
+
+flow_functions      -> flow_function_call CONNECT flow_functions
+                     | flow_function_call
+                     
+flow_function_call  -> VARIABLE LPAREN params RPAREN
+
+expression          -> term
+                     | string_def
+                     | expression PLUS term
+                     | expression MINUS term
+                     
+string_def          -> STRING
+
+term                -> exponent
+                     | term TIMES exponent
+                     | term DIV exponent
+                     
+exponent            -> factor
+                     | factor EXP factor
+                     
+factor              -> NUMBER
+                     | VARIABLE
+                     | LPAREN expression RPAREN
+                     | function_call
+                     
+function_call       -> VARIABLE LPAREN RPAREN
+                     | VARIABLE LPAREN params RPAREN
+                     
+params              -> params COMMA expression
+                     | expression
 
 ## Referencias
 <br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
 <br> OpenCV: Image Segmentation with Watershed Algorithm. (n.d.). https://docs.opencv.org/4.x/d3/db4/tutorial_py_watershed.html
-
