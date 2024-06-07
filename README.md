@@ -56,6 +56,7 @@ Para ver la documentación de las características implementadas, visitar los si
 
 ## Reglas de la Gramática Implementada
 A continuación se listan las reglas de la gramática implementada en `translator.py`:
+```markdown
 assignment          -> VARIABLE EQUAL expression
                      | VARIABLE EQUAL flow
                      | expression
@@ -91,6 +92,7 @@ function_call       -> VARIABLE LPAREN RPAREN
                      
 params              -> params COMMA expression
                      | expression
+```
 
 ## Referencias
 <br> OpenCV: Histograms - 1 : Find, Plot, Analyze !!! (n.d.). https://docs.opencv.org/4.x/d1/db7/tutorial_py_histogram_begins.html
