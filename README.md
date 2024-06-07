@@ -37,7 +37,7 @@ A continuación, se detallan las opciones disponibles junto con el puntaje asign
 
 | Características | Encargado    | Puntaje     |
 |----------------|--------------|-------------|
-| Aceptar None como valor de la gramática para inicialización de variables | Ari Alvarez | 5 |
+| Aceptar None como valor de la gramática para inicialización de variables | Diego Corrales| 5 |
 | Implementación de visualización de histogramas con opencv   | Ari  Alvarez |  10  |
 | Aceptar cualquier función de numpy para manejo de matrices como np.where, np.mean, np.std. Al menos 9 de ellas | Diego Corrales    |  10 |
 | Aceptar archivos y ejecutar el contenido    | 	Diego Corrales  |  15  |
