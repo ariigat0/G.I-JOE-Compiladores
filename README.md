@@ -46,11 +46,11 @@ A continuación, se detallan las opciones disponibles junto con el puntaje asign
 | **Total**    |    |  **105**        |
 
 Para ver la documentación de las características implementadas, visitar los siguientes documentos:
-- [Aceptar None para Inicialización de Variables]()
+- [Aceptar None para Inicialización de Variables](AceptarNone.md)
 - [Visualización de Histogramas con OpenCV](Histograma_opencv.md)
 - [Aceptar Funciones de Numpy](AceptarNumpy.md)
 - [Aceptar Archivos y Ejecutar el Contenido](AceptarArchivos.md)
-- [Implementar Flujos de Funciones]()
+- [Implementar Flujos de Funciones](Flujos.md)
 - [Implementación de un Algoritmo Complejo: WaterShed](Algoritmo_WaterShed.md)
 - [Implementación de Flujos que sean Agregaciones]()
 
