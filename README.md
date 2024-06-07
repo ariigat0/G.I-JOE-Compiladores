@@ -114,8 +114,7 @@ Translator v1.0
 
 Ahora se pueden escribir instrucciones para ser ejecutadas por el translator.
 
-> **_NOTA:_**  Se requiere de Python para correr `translator.py`.
-<br>
+> **_NOTA:_**  Se requiere de Python para correr `translator.py`. <br>
 > **_NOTA:_**  No se pueden escribir espacios en la entrada del translator.
 
 ### Ejemplos
@@ -127,7 +126,7 @@ Comando:
 ```markdown
 a=average(tuple(2,3,4))+33^54-87*2+4/23
 ```
-<br>
+
 Grafo resultante:
 <br>
 ![image](ImagenesReadme/Full1.png)
@@ -163,7 +162,7 @@ Comandos:
 a=3
 b=a->sumAB(3)->sumAB(3)->sumAB(3)
 ```
-<br>
+
 Grafos resultantes:
 <br>
 ![image](ImagenesReadme/Full2.1.png)
@@ -199,7 +198,7 @@ Comandos:
 a=23^3-2+45-90/2
 myPrint(None,a,2,3)
 ```
-<br>
+
 Grafos resultantes:
 <br>
 ![image](ImagenesReadme/Full3.1.png)
